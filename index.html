@@ -6,12 +6,97 @@
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	</head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<style type="text/css">
+	.collection-image {
+	padding: none;
+	position: relative;
+	width: 700px;
+	height: 700px;
+	float: right;
+	top: -100px;
+	right: 30px;
+	}
+	.compPick{
+	position: relative;
+	width: 100px;
+	height: 100px;
+	border: solid;
+	top: -50px;
+	}
+	.crystal-image {
+		width: 100px;
+		height: 100px;
+	}
+	h1 {
+		margin-top: 20px;
+	padding: none;
+		margin-left: 20px;
+		font-size: 40px;
+		font-weight: bold;
+	color: white;
+		line-height: 100px ;
+		text-align: center;
+		width: 540px;
+		height: 100px;
+		background-color: #D2691E;
+	}
+	.gameInstr {
+		margin-left: 20px;
+	width: 500px;
+	height: 250px;
+	background-color: #deb887;
+	padding: 20px;
+	}
+	.crystalBox{
+	position: relative;
+	border: solid;
+	width: 420px;
+	height: 120px;
+	top: 100px;
+	margin-left: 70px;
+	}
+	</style>
 	<body>
-	<div id="contentInfo">
-		<h1>Crystals Collector!</h1>
-	</div>
 		
-		<p>You will be given a random  number at the start of the game</p>
-		<script src="assets/javascript/game.js"></script>
+		
+		
+		<h1>Crystals Collector!</h1>
+		<img  class="collection-image" src="assets/images/f8307086da3cb790dd04185940dbe9cb_mining-machine-clipart-mines-clipart_400-295.jpeg">
+		
+		<div class="gameInstr">
+			
+			<p>You will be given a Random Number at the start of the game, shown in the green box below.</p>
+			<br>
+			<p>Every time you click on one of the four crystals a specific amount of points will be added to your total score.</p>
+			<br>
+			<p>To win the game match your total score to Random Number. You lose the game if your total score goes above Random Number.</p>
+			<br>
+			<p>Each time the game restarts a new Random Number will appear and the crystals will get new values.</p>
+		</div>
+		<br>
+		<br>
+		<div class="crystalBox">
+			<img  class="crystal-image" src="assets/images/3be3b8fe3ea97c6f41dc316e8250ae31_view-full-size-gem-clipart_6000-5999.png">
+			<img  class="crystal-image" src="assets/images/148644adad23b9fcc5b2c152d27df08e_gem-clip-art-gem-clipart_256-256.png">
+			<img  class="crystal-image" src="assets/images/8751fac33c8a259835ae2be9ddc290c5_purple-gem-clipart-1-gem-clipart_285-298.png">
+			<img  class="crystal-image" src="assets/images/50daa71863747eaed0c6fc8e7c316c82_aquamarine-png-clipart-gems-clipart_4000-3170.png">
+		</div>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+		<script type="text/javascript">
+			var randomNumber = Math.floor(Math.random() * (120-19+1)) + 19;
+		//randomNumber.addClass("compPick");
+		//randomNumber=$("#compPick")
+		$(randomNumber).addClass("compPick");
+		document.write("<p>" + randomNumber+ "</p>");
+		/*<script src="assets/javascript/game.js">*/
+		var counter =0;
+			$(".crystal-image").on("click",function() {
+				counter+=1
+				var crystalRandomNumber = Math.floor(Math.random() * (12-1)) + 1;
+		
+			alert("you clicked this crystal! "+crystalRandomNumber+"  times!");
+			});
+		</script>
 	</body>
-	</html>
+</html>
