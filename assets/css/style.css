@@ -17,18 +17,69 @@ body {
   
 
 }
-.compPick{
+
+	.collection-image {
+	padding: none;
+	position: relative;
+	width: 700px;
+	height: 700px;
+	float: right;
+	top: -100px;
+	right: 30px;
+	}
+	.compPick{
+	position: relative;
 	width: 100px;
 	height: 100px;
 	border: solid;
-}
+	left: 20px;
+	background-color: #32cd32;
+	top: 10px;
+	text-align: center;
+	line-height: 100px;
+	font-weight: bold;
+	font-size: 50px;
+	}
 
-.crystal-image {
-	width: 150px;
-	height: 150px;
-}
-
-.gameInstr {
-	width: 200px;
-	height: 300px;
-}
+	.crystal-image {
+		width: 100px;
+		height: 100px;
+	}
+	h1 {
+		margin-top: 20px;
+	padding: none;
+		margin-left: 20px;
+		font-size: 40px;
+		font-weight: bold;
+	color: white;
+		line-height: 100px ;
+		text-align: center;
+		width: 540px;
+		height: 100px;
+		background-color: #D2691E;
+	}
+	.gameInstr {
+		margin-left: 20px;
+	width: 500px;
+	height: 250px;
+	background-color: #deb887;
+	padding: 20px;
+	}
+	.crystalBox{
+	position: relative;
+	width: 420px;
+	height: 120px;
+	top: -70px;
+	margin-left: 70px;
+	}
+	.crystalPoints{
+		position: relative;
+		width: 300px;
+		height: 100px;
+		font-family: cursive;
+		font-size: 24px;
+		top: -95px;
+		right: -180px;
+		line-height: 100px;
+		color: #4169e1;
+	}
