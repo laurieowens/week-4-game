@@ -67,10 +67,11 @@ body {
 	}
 	.crystalBox{
 	position: relative;
+	
 	width: 420px;
 	height: 120px;
 	top: -113px;
-	margin-left: 90px;
+	margin-left: 140px;
 
 	}
 	.crystalPoints{
@@ -95,6 +96,22 @@ body {
     	width: 100px;
     	height: 100px;
     	top: 5px;
-    	right: 80px;
+    	right: 130px;
 
+    } 
+    .myWins{
+
+     position: relative;
+   
+     
+     width: 30px;
+     height: 30px;
+     left: -55px;
+     top: -95px;
+     z-index: 1;
+    }
+    .wins-image {
+    	width: 60px;
+    	height: 60px;
+    
     }
