@@ -6,7 +6,7 @@
 	$(document).ready(function(){
 		//$("randomNumber").addClass("compPick");
 		document.getElementById('compRandomNumber').innerHTML = randomNumber;
-		document.getElementById('runningTotal').innerHTML = 24;
+		//document.getElementById('runningTot').innerHTML = 24;
 		console.log(compRandomNumber)
 });
 		//document.write("<p>" + randomNumber+ "</p>");
