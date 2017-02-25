@@ -23,7 +23,8 @@ crystalNumbers=[];
 for (var i = 0; i < 4; i++){
 	crystalRandomNumber = Math.floor(Math.random() * (12-1)) + 1;
 	crystalNumbers.push(crystalRandomNumber);
-	imageCrystal.attr("data-crystalvalue", crystalNumbers[i]);
+	var crystal = $("#"+i);
+	crystal.attr("data-crystalvalue", crystalNumbers[i]);
 	console.log(crystalNumbers[i]);
 	console.log(crystalNumbers.length);
 }
@@ -42,6 +43,7 @@ for (var i = 0; i < 4; i++){
 	var imageCrystal = $("<img>");
 
 	imageCrystal.addClass("crystal-image");
+	imageCrystal.attr("id",i);
 	imageCrystal.attr("src",crystalPics[i]);
 	imageCrystal.attr("data-crystalvalue", crystalNumbers[i]);
 	console.log("for loop run array numbers",crystalNumbers[i]);
@@ -53,6 +55,7 @@ for (var i = 0; i < 4; i++){
 //function checkNumbers(){
 $(".crystal-image").on("click",function() {
 	var crystalValue = ($(this).attr("data-crystalvalue"));	
+	console.log($(this).attr("data-crystalvalue"));
 	crystalValue = parseInt(crystalValue)
 	console.log("here"+crystalValue)
 	counter += crystalValue;
